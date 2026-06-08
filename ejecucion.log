@@ -1,0 +1,24 @@
+--- Inicio de ejecucion: lun 08/06/2026 12:18:18.99 --- 
+2026-06-08 12:18:19,494 - INFO - --- Sincronizando: gc_cartera_agencia -> fct_stock_manubl_agencia_month_pruebas ---
+D:\Proyectos\Actualiacion_carteras\main.py:28: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn_remote)
+2026-06-08 12:18:19,834 - INFO - \u2705 Éxito: 9 registros cargados en fct_stock_manubl_agencia_month_pruebas
+2026-06-08 12:18:19,839 - INFO - --- Sincronizando: gc_cartera_asesor -> fct_stock_manubl_asesor_month_pruebas ---
+D:\Proyectos\Actualiacion_carteras\main.py:28: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn_remote)
+2026-06-08 12:18:19,898 - INFO - \u2705 Éxito: 86 registros cargados en fct_stock_manubl_asesor_month_pruebas
+[EXITO] Sincronizacion completada correctamente 
+--- Fin de ejecucion: lun 08/06/2026 12:18:19.99 --- 
+------------------------------------------ 
+--- Inicio de ejecucion: lun 08/06/2026 12:20:01.87 --- 
+2026-06-08 12:20:02,322 - INFO - --- Sincronizando: gc_cartera_agencia -> fct_stock_manubl_agencia_month_pruebas ---
+D:\Proyectos\Actualiacion_carteras\main.py:28: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn_remote)
+2026-06-08 12:20:02,660 - INFO - \u2705 Éxito: 9 registros cargados en fct_stock_manubl_agencia_month_pruebas
+2026-06-08 12:20:02,663 - INFO - --- Sincronizando: gc_cartera_asesor -> fct_stock_manubl_asesor_month_pruebas ---
+D:\Proyectos\Actualiacion_carteras\main.py:28: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn_remote)
+2026-06-08 12:20:02,746 - INFO - \u2705 Éxito: 86 registros cargados en fct_stock_manubl_asesor_month_pruebas
+[EXITO] Sincronizacion completada correctamente 
+--- Fin de ejecucion: lun 08/06/2026 12:20:02.85 --- 
+------------------------------------------ 
