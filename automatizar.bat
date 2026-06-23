@@ -1,4 +1,6 @@
 @echo off
+cd /d D:\Proyectos\Actualiacion_carteras
+python sync_productividad_diaria.py
 :: Cambiar al directorio del proyecto
 cd /d D:\Proyectos\Actualiacion_carteras
 
