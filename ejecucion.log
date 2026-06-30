@@ -34,3 +34,15 @@ D:\Proyectos\Actualiacion_carteras\main.py:28: UserWarning: pandas only supports
 [EXITO] Sincronizacion completada correctamente 
 --- Fin de ejecucion: mar 30/06/2026 12:38:42.75 --- 
 ------------------------------------------ 
+--- Inicio de ejecucion: mar 30/06/2026 12:50:02.26 --- 
+2026-06-30 12:50:02,685 - INFO - --- Sincronizando: gc_cartera_agencia -> fct_stock_manubl_agencia_month ---
+D:\Proyectos\Actualiacion_carteras\main.py:28: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn_remote)
+2026-06-30 12:50:03,015 - INFO - \u2705 Éxito: 13 registros cargados en fct_stock_manubl_agencia_month
+2026-06-30 12:50:03,017 - INFO - --- Sincronizando: gc_cartera_asesor -> fct_stock_manubl_asesor_month ---
+D:\Proyectos\Actualiacion_carteras\main.py:28: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn_remote)
+2026-06-30 12:50:03,135 - INFO - \u2705 Éxito: 113 registros cargados en fct_stock_manubl_asesor_month
+[EXITO] Sincronizacion completada correctamente 
+--- Fin de ejecucion: mar 30/06/2026 12:50:03.21 --- 
+------------------------------------------ 

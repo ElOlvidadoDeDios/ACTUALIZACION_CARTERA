@@ -1,23 +1,36 @@
 @echo off
-cd /d D:\Proyectos\Actualiacion_carteras
-python sync_productividad_diaria.py
-:: Cambiar al directorio del proyecto
-cd /d D:\Proyectos\Actualiacion_carteras
+echo ============================================================
+echo   ETL - ACTUALIZACION DE CARTERA Y POWER BI EN LA NUBE
+echo ============================================================
 
-:: Definir ruta de logs
-set LOG_FILE=D:\Proyectos\Actualiacion_carteras\ejecucion.log
+:: 1. Nos ubicamos en la ruta exacta del proyecto
+cd /d "%~dp0"
 
-echo --- Inicio de ejecucion: %date% %time% --- >> %LOG_FILE%
-
-:: Ejecutar script y redirigir errores al archivo log
-python main.py >> %LOG_FILE% 2>&1
-
-:: Verificar si hubo error (el nivel de error 0 significa éxito)
+echo [1/2] Ejecutando sincronizacion de Base de Datos...
+python main.py
 if %errorlevel% neq 0 (
-    echo [ERROR] El script finalizo con codigo %errorlevel% >> %LOG_FILE%
-) else (
-    echo [EXITO] Sincronizacion completada correctamente >> %LOG_FILE%
+    echo [ERROR] Fallo la sincronizacion de datos en Python.
+    pause
+    exit /b %errorlevel%
 )
 
-echo --- Fin de ejecucion: %date% %time% --- >> %LOG_FILE%
-echo ------------------------------------------ >> %LOG_FILE%
+echo.
+echo [2/2] Sincronizando el Dashboard en Power BI Service...
+:: Se asume el uso de PowerShell 7 (pwsh.exe)
+"C:\Program Files\PowerShell\7\pwsh.exe" -ExecutionPolicy Bypass -File "refresh_powerbi.ps1"
+if %errorlevel% neq 0 (
+    echo [ERROR] No se pudo conectar a la API de Power BI.
+    pause
+    exit /b %errorlevel%
+)
+
+:: La siguiente linea ha sido comentada para no ejecutar el recordatorio de metas
+:: echo.
+:: echo [3/3] Verificando envio de recordatorios por WhatsApp...
+:: python recordatorio_metas.py
+
+echo.
+echo ============================================================
+echo   PROCESO COMPLETADO CON EXITO
+echo ============================================================
+timeout /t 5 >nul
