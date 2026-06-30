@@ -1,25 +1,36 @@
-
---- Inicio de ejecucion: jue 25/06/2026  9:20:13.82 --- 
-2026-06-25 09:20:14,321 - INFO - --- Sincronizando: gc_cartera_agencia -> fct_stock_manubl_agencia_month ---
+--- Inicio de ejecucion: mar 30/06/2026 10:20:05.36 --- 
+2026-06-30 10:20:05,836 - INFO - --- Sincronizando: gc_cartera_agencia -> fct_stock_manubl_agencia_month ---
 D:\Proyectos\Actualiacion_carteras\main.py:28: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
   df = pd.read_sql(query, conn_remote)
-2026-06-25 09:20:14,706 - INFO - \u2705 Éxito: 10 registros cargados en fct_stock_manubl_agencia_month
-2026-06-25 09:20:14,716 - INFO - --- Sincronizando: gc_cartera_asesor -> fct_stock_manubl_asesor_month ---
+2026-06-30 10:20:06,266 - INFO - \u2705 Éxito: 13 registros cargados en fct_stock_manubl_agencia_month
+2026-06-30 10:20:06,267 - INFO - --- Sincronizando: gc_cartera_asesor -> fct_stock_manubl_asesor_month ---
 D:\Proyectos\Actualiacion_carteras\main.py:28: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
   df = pd.read_sql(query, conn_remote)
-2026-06-25 09:20:14,876 - INFO - \u2705 Éxito: 102 registros cargados en fct_stock_manubl_asesor_month
+2026-06-30 10:20:06,471 - INFO - \u2705 Éxito: 113 registros cargados en fct_stock_manubl_asesor_month
 [EXITO] Sincronizacion completada correctamente 
---- Fin de ejecucion: jue 25/06/2026  9:20:14.96 --- 
+--- Fin de ejecucion: mar 30/06/2026 10:20:06.54 --- 
 ------------------------------------------ 
---- Inicio de ejecucion: jue 25/06/2026  9:50:02.96 --- 
-2026-06-25 09:50:03,482 - INFO - --- Sincronizando: gc_cartera_agencia -> fct_stock_manubl_agencia_month ---
+--- Inicio de ejecucion: mar 30/06/2026 12:36:37.22 --- 
+2026-06-30 12:36:37,644 - INFO - --- Sincronizando: gc_cartera_agencia -> fct_stock_manubl_agencia_month ---
 D:\Proyectos\Actualiacion_carteras\main.py:28: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
   df = pd.read_sql(query, conn_remote)
-2026-06-25 09:50:03,854 - INFO - \u2705 Éxito: 10 registros cargados en fct_stock_manubl_agencia_month
-2026-06-25 09:50:03,868 - INFO - --- Sincronizando: gc_cartera_asesor -> fct_stock_manubl_asesor_month ---
+2026-06-30 12:36:38,113 - INFO - \u2705 Éxito: 13 registros cargados en fct_stock_manubl_agencia_month
+2026-06-30 12:36:38,122 - INFO - --- Sincronizando: gc_cartera_asesor -> fct_stock_manubl_asesor_month ---
 D:\Proyectos\Actualiacion_carteras\main.py:28: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
   df = pd.read_sql(query, conn_remote)
-2026-06-25 09:50:03,989 - INFO - \u2705 Éxito: 102 registros cargados en fct_stock_manubl_asesor_month
+2026-06-30 12:36:38,492 - INFO - \u2705 Éxito: 113 registros cargados en fct_stock_manubl_asesor_month
 [EXITO] Sincronizacion completada correctamente 
---- Fin de ejecucion: jue 25/06/2026  9:50:04.10 --- 
+--- Fin de ejecucion: mar 30/06/2026 12:36:38.60 --- 
+------------------------------------------ 
+--- Inicio de ejecucion: mar 30/06/2026 12:38:41.75 --- 
+2026-06-30 12:38:42,211 - INFO - --- Sincronizando: gc_cartera_agencia -> fct_stock_manubl_agencia_month ---
+D:\Proyectos\Actualiacion_carteras\main.py:28: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn_remote)
+2026-06-30 12:38:42,553 - INFO - \u2705 Éxito: 13 registros cargados en fct_stock_manubl_agencia_month
+2026-06-30 12:38:42,554 - INFO - --- Sincronizando: gc_cartera_asesor -> fct_stock_manubl_asesor_month ---
+D:\Proyectos\Actualiacion_carteras\main.py:28: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn_remote)
+2026-06-30 12:38:42,671 - INFO - \u2705 Éxito: 113 registros cargados en fct_stock_manubl_asesor_month
+[EXITO] Sincronizacion completada correctamente 
+--- Fin de ejecucion: mar 30/06/2026 12:38:42.75 --- 
 ------------------------------------------ 
